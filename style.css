@@ -1,0 +1,370 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+
+:root{
+ --blue:rgb(6, 154, 173)
+
+}
+*::selection{
+  background:var(--blue);
+  color:#ff;
+}
+*{
+  font-family: 'Nunito', sans-serif;
+  margin:0; padding:0;
+  box-sizing: border-box;
+  text-transform: capitalize;
+  outline: none; border:none;
+  text-decoration: none;
+  transition: all .2s linear;
+}
+
+
+
+html{
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-padding-top: 6rem;
+  scroll-behavior: smooth;
+}
+
+section{
+  padding:2rem 9%;
+}
+
+.heading{
+  text-align: center;
+  padding:2.5rem 0
+}
+
+.heading span{
+  font-size: 3.5rem;
+  background:rgba(255, 165, 0,.2);
+  color:var(--blue);
+  border-radius: .5rem;
+  padding:.2rem 1rem;
+}
+
+.heading span.space{
+  background:none;
+}
+
+.btn{
+  display: inline-block;
+  margin-top: 1rem;
+  background:var(--blue);
+  color:#fff;
+  padding:.8rem 3rem;
+  border:.2rem solid var(--blue);
+  cursor: pointer;
+  font-size: 1.7rem;
+}
+
+.btn:hover{
+  background:rgba(255, 165, 0,.2);
+  color:var(--blue);
+}
+
+header{
+  position: fixed;
+  top:0; left: 0; right:0;
+  background:rgb(6, 154, 173);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding:.5rem 1%;
+  margin:0 0 0 0;
+}
+
+
+header .navbar a{
+  color:#fff;
+  font-size: 2rem;
+  margin:0 .8rem;
+  
+}
+
+header .navbar a:hover{
+  color:var(--blue);
+}
+
+/* header section end */
+
+/* home section start */
+
+.home {
+    display: flex;
+    flex-wrap: wrap;
+    gap:1.5rem;
+    align-items: center;
+  }
+  
+  .home .myphoto{
+    flex:1 1 35rem;
+  }
+  
+  .home .myphoto  img{
+    width:60%;
+    
+
+  }
+  .home .Introduction h1{
+      font-size: 3rem;
+     
+
+  }
+  .home .Introduction h2{
+    font-size: 3rem;
+    padding: 1rem 0;
+    
+}
+.home .Introduction p{
+    font-size: 1.5rem;
+    padding: 1rem 0;
+    
+}
+/* section home end */
+/* section about me start */
+.aboutme {
+    display: flex;
+    flex-wrap: wrap;
+    gap:1.5rem;
+    align-items: center;
+   }
+  
+  .aboutme .skills{
+    flex:1 1 35rem;
+      
+  }
+  .aboutme .skills h1{
+    color: var(--blue);
+    font-size: 3rem;
+    text-align: left;
+  }
+  .aboutme .skills.container {
+    width: 100%;
+    background-color: #ddd;
+  }
+  
+  .aboutme .skills.skills {
+    text-align: left;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    border-radius: 1rem;
+    color: rgb(15, 14, 14);
+    font-size: 1.5rem;
+
+  }
+  
+  .aboutme .skills.html {width: 90%; background-color: var(--blue);}
+  .aboutme .skills.css {width: 80%; background-color: var(--blue);}
+  .aboutme .skills.js {width: 65%; background-color: var(--blue);}
+  .aboutme .skills.php {width: 60%; background-color: var(--blue);}
+
+  .aboutme .experience span{
+    color: var(--blue);
+    font-size: 3rem;
+    text-align: right;
+
+  }
+  .aboutme .experience .Desginer h1{
+    font-size: 1.5rem;
+    text-align: left;
+    padding: 1rem 0; 
+  }
+  /* section aboutme end */
+  /* section servire start */
+  .services span{
+    color: var(--blue);
+    font-size: 3rem;
+    text-align: center;
+  } 
+.services .provided{
+    display: flex;
+     flex:1 1 40rem;
+    padding:3rem;
+    
+    border-radius: .5rem;
+    
+  }
+ 
+  .services .provided .box{
+    flex: 1 1 30rem;
+    border-radius: 1rem;
+    padding:1rem;
+    text-align: center;
+    box-shadow: 0 1rem 2rem rgba(0,0,0,.1);
+  }
+  
+  .services .provided .box i{
+    padding:1rem;
+    font-size: 5rem;
+    color:var(--blue);
+  }
+  
+  .services .provided .box h3{
+    font-size: 1.5rem;
+    color:#333;
+  }
+  
+  
+  .services .provided .box:hover{
+    box-shadow: 0 1rem 2rem rgba(0,0,0,.1);
+  }
+
+  .services .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap:2rem;
+  }
+  
+  .services .box-container .box{
+    flex:1 1 30rem;
+    border-radius: .5rem;
+    overflow: hidden;
+    box-shadow: 0 1rem 2rem rgba(0,0,0,.1);
+  }
+  
+  .services .box-container .box img{
+    height: 25rem;
+    width:100%;
+    object-fit: cover;
+  }
+  
+  .services .box-container .box .content{
+    padding:2rem;
+  }
+  
+  .services .box-container .box .content h3{
+    font-size:2rem;
+    color:#333;
+  }
+  
+  .services .box-container .box .content h3 i{
+    color:var(--orange);
+  }
+  
+  .services .box-container .box .content p{
+    font-size:1.7rem;
+    color:#666;
+    padding:1rem 0;
+  }
+  
+  .services .box-container .box .content .stars i{
+    font-size:1.7rem;
+    color:var(--orange);
+  }
+  
+  .services .box-container .box .content .price{
+    font-size: 2rem;
+    color:#333;
+    padding-top: 1rem;
+  }
+  
+  .services .box-container .box .content .price span{
+    color:#666;
+    font-size: 1.5rem;
+    text-decoration: line-through;
+  }
+  /* section contact  */
+  
+.contact .row{
+    display: flex;
+    flex-wrap: wrap;
+    gap:1.5rem;
+    align-items: center;
+  }
+  
+  .contact .row .image{
+    flex:1 1 35rem;
+  }
+  
+  .contact .row .image img{
+    width:100%;
+  }
+  
+  .contact .row form{
+    flex:1 1 50rem;
+    padding:2rem;
+    box-shadow: 0 1rem 2rem rgba(0,0,0,.1);
+    border-radius: .5rem;
+  }
+  
+  .contact .row form .inputBox{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .contact .row form .inputBox input, .contact .row form textarea{
+    width:49%;
+    margin:1rem 0;
+    padding:1rem;
+    font-size: 1.7rem;
+    color:#333;
+    background:#f7f7f7;
+    text-transform: none;
+  }
+  
+  .contact .row form textarea{
+    height: 15rem;
+    resize: none;
+    width:100%;
+  }
+  /* footer */
+  
+.footer{
+    background:rgb(6, 154, 173);
+  }
+  
+  .footer .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap:1.5rem;
+  }
+  
+  .footer .box-container .box{
+    padding:1rem 0;
+    flex:1 1 25rem;
+  }
+  
+  .footer .box-container .box h3{
+    font-size: 2.5rem;
+    padding:.7rem 0;
+    color:#fff;
+  }
+  
+  .footer .box-container .box p{
+    font-size: 1.5rem;
+    padding:.7rem 0;
+    color:#eee;
+  }
+  
+  .footer .box-container .box a{
+    display: block;
+    font-size: 1.5rem;
+    padding:.7rem 0;
+    color:#eee;
+  }
+  
+  .footer .box-container .box a:hover{
+    color:var(--blue);
+    text-decoration: underline;
+  }
+  
+  .footer .credit{
+    text-align: center;
+    padding:2rem 1rem;
+    margin-top: 1rem;
+    font-size: 2rem;
+    font-weight: normal;
+    color:#fff;
+    border-top: .1rem solid rgba(255,255,255,.2);
+  }
+  
+  .footer .credit span{
+    color:var(--blue);
+  }
+  
+  /* media  */
+  
