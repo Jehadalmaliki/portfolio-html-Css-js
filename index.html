@@ -15,12 +15,14 @@
 <body>
     <!-- section header start -->
     <header>
+        <a href="#home" class="logo">Jehad</a>
+        <div id="menu-icon" class="fas fa-bars"></div>
     <nav class="navbar">
         
-            <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">Services</a>
-            <a href="#">Contact</a>
+            <a href="#home">Home</a>
+            <a href="#aboutme">About</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
         
 
     </nav>
@@ -29,18 +31,16 @@
     <!-- section header end -->
     <!-- section home start -->
     <section id="home" class="home">
-        <div class ="myphoto">
+        <!-- <div class ="myphoto">
          
-            <img  src="images/face.jpg" alt="">
+            <img  src="images/face2.png" alt="">
              </div>
-        
-        <div class="Introduction">
-            <h1> I'm A web developer,  </h1>
-            <h2>Jehad Almaliki</h2>
-            
-            <p>Powerful skills in desinging web pages ,
-                </p>
-            <a href="#" class="btn">download my Cev</a>
+         -->
+        <div class="Introduction" id="Introduction">
+            <h1>Hi, I'm <span>Jehad Almaliki</span></h1>
+            <h2>Freelance Web Developer</h2>
+            <p>Powerful skills in web development.</p>
+            <a href="#" class="btn">Download CV</a>
         </div>
 
         
@@ -48,45 +48,56 @@
     <!-- section home end -->
 
     <!-- section about me  start -->
-    <section   id ="aboutme " class="aboutme" >
-        <div class ="skills">
-            <h1>My Skills</h1>
-
-            <p>HTML</p>
-            <div class="container">
-              <div class="skills html">90%</div>
-            </div>
-            
-            <p>CSS</p>
-            <div class="container">
-              <div class="skills css">80%</div>
-            </div>
-            
-            <p>JavaScript</p>
-            <div class="container">
-              <div class="skills js">20%</div>
-            </div>
-            
-            <p>PHP</p>
-            <div class="container">
-              <div class="skills php">60%</div>
-            </div>
-
+    <section   id ="aboutme" class="aboutme" >
+        <div class="heading">
+            <h1>Skills</h1>
         </div>
-        <div class="experience">
-            <span>My  experience</span>
-            <div class="Desginer">
-                <h1>Desginer</h1>
-                <p>Three Year desiginer at software copmany </p>
+        <!-- Content -->
+        <div class="skills-content">
+            <div class="skills-bars">
+                <div class="skills-text">
+                    <h2>My creative Skills</h2>
+                    <p>I have extensive knowledge of HTML, JavaScript, PHP, and Mysql.</p>
+                    
+
+                </div>
+                <div class="skills-box">
+                    <i class="fab fa-html5"><h3>HTML</h3></i>
+                    <span>94%</span>
+                    <div class="percent-bar html-bar"></div>
+                </div>
+                <div class="skills-box">
+                    <i class="fab fa-css3"><h3>CSS</h3></i>
+                    <span>84%</span>
+                    <div class="percent-bar css-bar"></div>
+                </div>
+                <div class="skills-box">
+                    <i class="fab fa-js"><h3>JavaScript</h3></i>
+                    <span>65%</span>
+                    <div class="percent-bar js-bar"></div>
+                </div>
+                <div class="skills-box">
+                    <i class="fas fa-palette"><h3>UI/UX</h3></i>
+                    <span>80%</span>
+                    <div class="percent-bar ux-bar"></div>
+                </div>
             </div>
-            <div class="Trainer">
-                <h1>Desginer</h1>
-                <p>Three Year desiginer at software copmany </p>
-            </div>
-            <div class="Developer">
-                <h1>Desginer</h1>
-                <p>Three Year desiginer at software copmany </p>
-            </div>
+           
+            <!-- Content -->
+            
+                <div class="skills-bars">
+                    <div class="skills-text">
+                        <h2>My creative expriences</h2>
+                        <p>I am a developer and UX/UI designer based in Yemen. </p>
+                        <p>My extensive experience with designing and developing websites using Html5, CSS, and JS on Rails matches well with your requirements.</p>
+                        <p>National and international customers have relied on me for design,</p>
+                        <p>As a freelancer, I works also with web , companies and individuals to create websites business. </p>
+                        
+                        
+    
+                    </div>
+                </div>
+            
 
         </div>
     </section>
@@ -94,141 +105,124 @@
 
     <!-- section services start -->
     <section id="services" class="services">
-        <span>My  experience</span>
+        <div class="heading">
+            <h1>services</h1>
+        </div>
         <div class="provided">
             
             <div class="box">
-                <i class="fas fa-book"></i>
-                <h3>Desgin web site</h3>
+                <i class="fas fa-laptop-code"></i>
+                <h3>Web Designing</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing .</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing .</p>
+                
             </div>
             
             <div class="box">
-                <i class="fas fa-camera-retro"></i>
-                <h3>UI/Ux</h3>
+                <i class="fas fa-code-branch"></i>
+                <h3>Apps Designing</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing .</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing .</p>
+                
             </div>
             <div class="box">
-                <i class="fas fa-bullhorn"></i>
+                <i class="fas fa-code"></i>
                 <h3>UI/Ux</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing .</p>
-            </div>
-            <div class="box">
-                <i class="fas fa-bullhorn"></i>
-                <h3>UI/Ux</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing .</p>
-            </div>
-
-        </div>
-        <span>previose work</span>
-        <div class="box-container">
-                
-        <div class="box">
-            <img src="images/face.jpg" alt="">
-            <div class="content">
-              <a href="#" class="btn">Read more</a>  
-                <p>Lorem ipsum dolor sit amet consectetur <br>adipisicing elit. Veritatis, nam!</p>
-               
                 
             </div>
-        </div>
-
-     <div class="box">
-            <img src="images/face.jpg" alt="">
-            <div class="content">
-              <a href="#" class="btn">Read more</a>  
-                <p>Lorem ipsum dolor sit amet consectetur <br>adipisicing elit. Veritatis, nam!</p>
-               
-                
-            </div>
-			
-        </div>
-        <div class="box">
-            <img src="images/face.jpg" alt="">
-            <div class="content">
-              <a href="#" class="btn">Read more</a>  
-                <p>Lorem ipsum dolor sit amet consectetur <br>adipisicing elit. Veritatis, nam!</p>
-               
-                
-            </div>
-			
+            
         </div>
         
+        <div class="portfolio">
         
-
+            <div class="heading">
+                <h1>previose work</h1>
+            </div>
+    
+            <!-- Content -->
+            <div class="portfolio-content">
+                <div class="p-box">
+                    <div class="p-img">
+                        <img src="images/p1.jpg" alt="">
+                        
+                    </div>
+                    <h2>Web Developer</h2>
+                    <p>Website of Userbot ,Human + Artificial Intelligence</p>
+                </div>
+                <div class="p-box">
+                    <div class="p-img">
+                        <img src="images/p2.jpg" alt="">
+                        
+                    </div>
+                    <h2>Web Designing</h2>
+                    <p>The portfolio of Hamed bussines,a young Yemeni designer.With web team from Alkarime Bank ,at 2021 .Take 150 hours</p>
+                </div>
+                <div class="p-box">
+                    <div class="p-img">
+                        <img src="images/p3.jpg" alt="">
+                        
+                    </div>
+                    <h2>UI/UX</h2>
+                    <p>UX/UI design of equity,crowdfunding portal</p>
+                </div>
+            </div>
         </div>
 
     </section>
     <!-- section service end -->
 
     <!-- section contact me start -->
-    <section id="contact" class="contact">
-        <div class="row">
-
-            <div class="image">
-                <i class="fas fa-camera-retro"></i>
-                <h3>facebook</h3>
-                <i class="fas fa-camera-retro"></i>
-                <h3>twitter</h3>
-                <i class="fas fa-camera-retro"></i>
-                <h3>instagram</h3>
-            </div>
-    
-            <form action="">
-                <div class="inputBox">
-                    <input type="text" placeholder="name">
-                    <input type="email" placeholder="email">
-                </div>
-                <div class="inputBox">
-                    <input type="number" placeholder="number">
-                    <input type="text" placeholder="subject">
-                </div>
-                <textarea placeholder="message" name="" id="" cols="30" rows="10"></textarea>
-                <input type="submit" class="btn" value="send message">
-            </form>
-    
+    <section class="contact" id="contact">
+        <div class="heading">
+            <h1>Contact</h1>
         </div>
+        <!-- Content -->
+        <div class="contact-content">
+            <div class="contact-info">
+                <div class="info-box">
+                    <i class="fas fa-phone-alt"></i>
+                    <p>+967 737780703</p>
+                </div>
+                <div class="info-box">
+                    <i class="fas fa-envelope-open"></i>
+                    <p>deeppp901@email.com</p>
+                </div>
+                <div class="info-box">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p>Alrowda street Taiz, Yemen</p>
+                </div>
+                <div class="info-box social">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    
+                </div>
+            </div>
+            <!-- Contact Form -->
+            <div class="contact-form">
+                <form action="">
+                    <input type="email" placeholder="Enter Your Email">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Write your message here..."></textarea>
+                    <input type="button" value="Send" class="contact-button">
+                </form>
+            </div>
+        </div>
+    </section>
 
-     </section>
      <!-- section cotact me end -->
      <!-- footer start -->
 
-     <footer class="footer">
-        <div class="box-container">
-
-            <div class="box">
-                <h3>about us</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda quas magni pariatur est accusantium voluptas enim nemo facilis sit debitis.</p>
-            </div>
-            
-            <div class="box">
-                <h3>follow us</h3>
-                <a href="#">facebook</a>
-                <a href="#">instagram</a>
-                <a href="#">twitter</a>
-                <a href="#">linkedin</a>
-            </div>
-            <div class="box">
-                <h3>follow us</h3>
-                <a href="#">facebook</a>
-                <a href="#">instagram</a>
-                <a href="#">twitter</a>
-                <a href="#">linkedin</a>
-            </div>
-            <div class="box">
-                <h3>follow us</h3>
-                <a href="#">facebook</a>
-                <a href="#">instagram</a>
-                <a href="#">twitter</a>
-                <a href="#">linkedin</a>
-            </div>
-            
-    
+     <footer >
+        <div class="copyright">
+            <p>&#169;Jehad Almaliki ♥ All Right Reserved</p>
         </div>
-    
-        <h1 class="credit"> created by <span> Eng Jehad Ali </span> | all rights reserved! </h1>
      </footer>
      <!-- footer end -->
+     <!-- Link To JS -->
+    <script src="js.js"></script>
      
 
 </body>
