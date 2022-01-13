@@ -10,12 +10,16 @@
 
      <!-- custom css file link  -->
      <link rel="stylesheet" href="style.css">
+     <style>
+
+     </style>
      
 </head>
 <body>
     <!-- section header start -->
     <header>
-        <a href="#home" class="logo">Jehad</a>
+        <a href="#home" class="logo"><button onclick="darkMode()"class="Darkmode" >Darkmode</button>Jehad</a>
+          
         <div id="menu-icon" class="fas fa-bars"></div>
     <nav class="navbar">
         
@@ -143,27 +147,27 @@
             <div class="portfolio-content">
                 <div class="p-box">
                     <div class="p-img">
-                        <img src="images/p1.jpg" alt="">
+                        <img src="images/a1.png" alt=""  onmouseover="OnMouseIn (this)" onmouseout="OnMouseOut (this)">
                         
                     </div>
-                    <h2>Web Developer</h2>
-                    <p>Website of Userbot ,Human + Artificial Intelligence</p>
+                    <h2>Website of Userbot</h2>
+                    
                 </div>
                 <div class="p-box">
                     <div class="p-img">
-                        <img src="images/p2.jpg" alt="">
+                        <img src="images/a2.png" alt=""  onmouseover="OnMouseIn (this)" onmouseout="OnMouseOut (this)">
                         
                     </div>
-                    <h2>Web Designing</h2>
-                    <p>The portfolio of Hamed ,a young Yemeni designer.</p>
+                    <h2>The portfolio of Jehad</h2>
+                    
                 </div>
                 <div class="p-box">
                     <div class="p-img">
-                        <img src="images/p3.jpg" alt="">
+                        <img src="images/a3.png" alt="" onmouseover="OnMouseIn (this)" onmouseout="OnMouseOut (this)">
                         
                     </div>
-                    <h2>UI/UX</h2>
-                    <p>UX/UI design of equity,crowdfunding portal</p>
+                    <h2>UX/UI design of equity</h2>
+                    
                 </div>
             </div>
         </div>
@@ -182,17 +186,17 @@
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos harum corporis fuga corrupti. Doloribus quis soluta nesciunt veritatis vitae nobis?</p>
                     <div class="icons">
                         <div class="row">
-                            <i class="fas fa-user"></i>
+                            <i class="fab fa-facebook"></i>
                             <div class="info">
-                                <div class="head">Name</div>
-                                <div class="sub-title">Jehad</div>
+                                <div class="head">facebook</div>
+                                <div class="sub-title">JehadAlmalik@facebook</div>
                             </div>
                         </div>
                         <div class="row">
-                            <i class="fas fa-map-marker-alt"></i>
+                            <i class="fab fa-linkedin-in"></i>
                             <div class="info">
-                                <div class="head">Address</div>
-                                <div class="sub-title">Taiz,Yemen</div>
+                                <div class="head">LinkedIn</div>
+                                <div class="sub-title">Jehadalimaliki@LinkedIn</div>
                             </div>
                         </div>
                         <div class="row">
@@ -206,23 +210,23 @@
                 </div>
                 <div class="column right">
                     <div class="text">Message me</div>
-                    <form action="#">
+                    <form method="post" id="validationForm">
                         <div class="fields">
                             <div class="field name">
-                                <input type="text" placeholder="Name" required>
+                                <input type="text" id="firstName" placeholder="Name" required>
+                                <div id="first-name-err"></div>
                             </div>
                             <div class="field email">
-                                <input type="email" placeholder="Email" required>
+                                <input type="email" id="emailAddress" placeholder="Email" required>
+                                <div id="email-err"></div>
                             </div>
                         </div>
-                        <div class="field">
-                            <input type="text" placeholder="Subject" required>
-                        </div>
                         <div class="field textarea">
-                            <textarea cols="30" rows="10" placeholder="Message.." required></textarea>
+                            <textarea cols="30" rows="50" id="area" placeholder="Message.." required></textarea>
+                            <div id="area-err"></div>
                         </div>
                         <div class="button-area">
-                            <button type="submit" >Send message</button>
+                            <input type="submit" >
                         </div>
                     </form>
                 </div>
@@ -243,4 +247,22 @@
      
 
 </body>
+<script src="main.js"></script>
+<script src="script.js">
+
+</script>
+<script>
+    function darkMode() {
+      var element = document.body;
+      element.classList.toggle("dark-mode");
+    }
+    function OnMouseIn(elem) {
+            elem.style.width = "320px";
+            elem.style.hight = "320px";
+        }
+        function OnMouseOut(elem) {
+            elem.style.width = "300px";
+            elem.style.hight = "300px";
+        }
+  </script>
 </html>
