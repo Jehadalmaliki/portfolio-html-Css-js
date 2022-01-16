@@ -19,25 +19,39 @@
   background-color: black;
   color: white;
 }
-.dark-mode >div.p-box {
+.dark-mode .p-box {
     background: black;
     
   }
-
-*{
+  .dark-mode >.home{
+    /* background:  linear-gradient(90deg, rgba(0,0,0,0.4) , rgba(0,0,0,.6)) ,url("images/face2.png");} */
+    background-image:url(images/d5.png) ;}
+    .dark-mode .Introduction h1 {
+      color: #8d8989;
+    }
+    .dark-mode .Introduction span {
+      color:var(--blue);
+    }
+    .dark-mode .Introduction h2 {
+      color: #a3a1a1;
+    }
+    .dark-mode .Introduction p {
+      color: #afabab;
+    }
+ *{
   font-family: 'Nunito', sans-serif;
   margin:0; padding:0;
   box-sizing: border-box;
   text-transform: capitalize;
   outline: none; border:none;
   text-decoration: none;
-  transition: all .2s linear;
-  scroll-behavior: smooth;
-}
+  /* transition: all .2s linear;
+  scroll-behavior: smooth; */
+} 
 html{
   font-size: 62.5%;
-  overflow-x: hidden;
-  scroll-padding-top: 6rem;
+  /* overflow-x:hidden;
+  scroll-padding-top: 6rem; */
 }
 
 body::-webkit-scrollbar {
@@ -52,23 +66,6 @@ body::-webkit-scrollbar-thumb {
 
 section{
   padding:2rem 9%;
-}
-
-.heading{
-  text-align: center;
-  padding:2.5rem 0
-}
-
-.heading span{
-  font-size: 3.5rem;
-  background:rgba(255, 165, 0,.2);
-  color:var(--blue);
-  border-radius: .5rem;
-  padding:.2rem 1rem;
-}
-
-.heading span.space{
-  background:none;
 }
 
 .btn{
@@ -106,15 +103,13 @@ header{
   color:var(--blue);
   padding: 0 30px;
 }
-.logo button{
-  border:3px solid #01a29c ;
-  border-radius: 20%;
-  padding: 2px 2px;
-  margin:1px 10px 10px 10px;
+
+#darkicon{
+  font-size: 3rem;
+  color:var(--blue);
+  
 }
-.navbar {
-  display: flex;
-}
+
 header .navbar a{
   color:#222435;
   font-size: 2rem;
@@ -143,7 +138,7 @@ header .navbar a:hover{
   display: flex;
   align-items: center;
   background-color: var(--bg-color);
-  background: url(images/face2.png) no-repeat;
+   background: url(images/face2.png) no-repeat; 
   background-size: cover;
   background-position: right center;
 }
@@ -239,12 +234,9 @@ header .navbar a:hover{
   left: 0;
   bottom: 0;
   background: var(--primary);
-  
   height: 0.5rem;
   border-radius: 10px;
-}
-  
-  
+}  
 .html-bar {
   width: 94%;
 }
@@ -257,29 +249,13 @@ header .navbar a:hover{
 .ux-bar {
   width: 80%;
 }
-.aboutme .experience span{
-  color: var(--blue);
-  font-size: 3rem;
-  text-align: right;
 
-}
-
-  .aboutme .experience .Desginer h1{
-    font-size: 1.5rem;
-    text-align: left;
-    padding: 1rem 0; 
-  }
   /* section aboutme end */
   /* section servire start */
   .services{
     padding-top: 5px;
   }
-  .services span{
-    color: var(--blue);
-    font-size: 3rem;
-    text-align: center;
-    
-  } 
+  
 .services .provided{
     display: flex;
     align-items: center;
@@ -491,7 +467,11 @@ color: #eee;
   /* media  */
   /* Making Responsive */
   @media (max-width: 414px) {
-    
+    #menu-icon{
+      padding-right:0px;
+      padding-left: 100px;
+   
+    }
     .aboutme{  
     padding-bottom: 5px;
     }
@@ -513,6 +493,8 @@ color: #eee;
     .contact .contact-content .column{
     width: calc(80% - 0px);
   }
+
+  
 }
 @media (max-width: 280px) {
   .p-img img{
@@ -536,6 +518,7 @@ color: #eee;
     flex-direction: column;
   
   }
+  
   .contact .contact-content .column{
   width: calc(80% - 0px);
 }
@@ -650,6 +633,7 @@ color: #eee;
   #menu-icon {
     display: initial;
     color: var(--blue);
+   
   }
   header .navbar {
     position: absolute;
@@ -663,6 +647,7 @@ color: #eee;
     clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
     transition: 0.5s ease;
   }
+ 
   header .navbar.active {
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
   }
@@ -690,11 +675,13 @@ color: #eee;
    
   } 
 }
- 
-
 @media (max-width: 670px) {
   header {
     padding: 10px 34px;
+    padding-right: 20px;
+    padding-left: 10px;
+
+
   }
   section {
     padding: 50px 34px;

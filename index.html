@@ -18,7 +18,7 @@
 <body>
     <!-- section header start -->
     <header>
-        <a href="#home" class="logo"><button onclick="darkMode()"class="Darkmode" >Darkmode</button>Jehad</a>
+        <a href="#home" class="logo">Jehad</a>
           
         <div id="menu-icon" class="fas fa-bars"></div>
     <nav class="navbar">
@@ -27,15 +27,15 @@
             <a href="#aboutme">About</a>
             <a href="#services">Services</a>
             <a href="#contact">Contact</a>
-        
+          
 
     </nav>
-    
-</header>
+    <i id="darkicon" class="fas fa-moon "onclick="darkMode()"class="Darkmode"></i>
+    </header>
     <!-- section header end -->
     <!-- section home start -->
     <section id="home" class="home">
-       
+      
         <div class="Introduction" id="Introduction">
             <h1>Hi, I'm <span>Jehad Almaliki</span></h1>
             <h2>Freelance Web Developer</h2>
@@ -210,20 +210,20 @@
                 </div>
                 <div class="column right">
                     <div class="text">Message me</div>
-                    <form method="post" id="validationForm">
+                    <form method="post" id="validationForm" action="\">
                         <div class="fields">
                             <div class="field name">
-                                <input type="text" id="firstName" placeholder="Name" required>
-                                <div id="first-name-err"></div>
+                                <input type="text" id="firstName" placeholder="Name" >
+                                <div id="errname"></div>
                             </div>
                             <div class="field email">
-                                <input type="email" id="emailAddress" placeholder="Email" required>
-                                <div id="email-err"></div>
+                                <input type="email" id="emailAddress" placeholder="Email" >
+                                <div id="erremail"></div>
                             </div>
                         </div>
                         <div class="field textarea">
-                            <textarea cols="30" rows="50" id="area" placeholder="Message.." required></textarea>
-                            <div id="area-err"></div>
+                            <textarea cols="30" rows="10" id="area" placeholder="Message.." ></textarea>
+                            <div id="errarea"></div>
                         </div>
                         <div class="button-area">
                             <input type="submit" >
@@ -231,7 +231,7 @@
                     </form>
                 </div>
             
-        </div>
+            </div>
     </section>
 
      <!-- section cotact me end -->
@@ -247,22 +247,7 @@
      
 
 </body>
-<script src="main.js"></script>
-<script src="script.js">
-
-</script>
-<script>
-    function darkMode() {
-      var element = document.body;
-      element.classList.toggle("dark-mode");
-    }
-    function OnMouseIn(elem) {
-            elem.style.width = "320px";
-            elem.style.hight = "320px";
-        }
-        function OnMouseOut(elem) {
-            elem.style.width = "300px";
-            elem.style.hight = "300px";
-        }
+<script src="main.js">
+    
   </script>
 </html>
