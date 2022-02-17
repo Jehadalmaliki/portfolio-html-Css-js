@@ -25,7 +25,7 @@
   }
   .dark-mode >.home{
     /* background:  linear-gradient(90deg, rgba(0,0,0,0.4) , rgba(0,0,0,.6)) ,url("images/face2.png");} */
-    background-image:url(images/d5.png) ;}
+    background: url(images/d5.png) ;}
     .dark-mode .Introduction h1 {
       color: #8d8989;
     }
@@ -133,7 +133,7 @@ header .navbar a:hover{
 .home {
   position: relative;
   width: 100%;
-  min-height: 100vh;
+  min-height: 70vh;
   color: #222435;
   display: flex;
   align-items: center;
@@ -290,9 +290,9 @@ header .navbar a:hover{
     color:#333;
   }
   
-  .services .provided .box:hover{
+  /* .services .provided .box:hover{
     box-shadow: 0 1rem 2rem rgba(0,0,0,.1);
-  }
+  } */
 
   .portfolio-content {
     display: flex;
@@ -315,7 +315,7 @@ header .navbar a:hover{
   }
   .p-box:hover {
     background: var(--primary);
-    transition: 0.5s ease;
+    /* transition: 0.5s ease; */
   }
   .p-img {
     width: 280px;
@@ -335,11 +335,7 @@ header .navbar a:hover{
     color: #eee;
 
   }
-  .p-box p {
-    font-size: 1.5rem;
-    font-weight: 400;
-    color: #eee;
-  }
+  
   /* section contact  */
  
  .contact{
@@ -361,7 +357,7 @@ margin-top: 0;
     margin-bottom: 10px;
   }
 .contact .contact-content .left p{
-    text-align: justify;
+    text-decoration: right;
     font-size:1.2rem ;
     font-weight: 500;
 }
